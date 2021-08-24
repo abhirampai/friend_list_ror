@@ -1,0 +1,15 @@
+<span class="badge bg-success"><%= notice %></span>
+
+<div class="card mx-auto" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= @friend.first_name %><%= " " %><%= @friend.last_name %></h5>
+    <h6 class="card-subtitle mb-2 text-muted">Details</h6>
+    <p class="card-text">Email: <%= @friend.email %></p>
+    <p class="card-text">Phone: <%= @friend.phone_number %></p>
+    <p class="card-text">Twitter: <%= @friend.twitter %></p>
+    <%= link_to 'Edit', edit_friend_path(@friend) , class: "btn btn-secondary" %> |
+    <%= link_to 'Back', friends_path, class: "btn btn-secondary" %>
+  </div>
+</div>
+
+
